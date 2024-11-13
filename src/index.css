@@ -78,26 +78,27 @@ main {
             margin-bottom: 1rem;
             line-height: 1.5rem;
           }
-
+                    
           .tag {
             margin: .25rem;
             padding: .5rem;
+            border-radius: .5rem;
           }
 
           .html {
-            background-color: blue;
+            background-color: #AFAFDC;
           }
 
           .css {
-            background-color: violet;
+            background-color: #F46036;
           }
 
           .js {
-            background-color: green;
+            background-color: #D7FCD4;
           }
 
           .php {
-            background-color: aqua;
+            background-color: #1B998B;
           }
         }
       }
