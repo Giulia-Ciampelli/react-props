@@ -7,6 +7,7 @@ export default function PostCard({ post }) {
     const button = 'leggi di più';
 
     // map di map?
+    const custom_tags = post.tags.map((tag, index) => <span key={index} className={`tag-${tag.toLowerCase()}`}>{tag}</span>);
 
     // markup
     return (
@@ -23,7 +24,7 @@ export default function PostCard({ post }) {
                         {post.content}
                     </p>
                     <p className="tags">
-                        {post.tags.join(' ')}
+                        {custom_tags.join(' ')}
                     </p>
                     <button className={style.btn}>
                         {button.toUpperCase()}
