@@ -1,5 +1,6 @@
 // importazioni
 import PostCard from "./Card/PostCard";
+import posts from '../data/posts';
 
 export default function Main() {
 
@@ -7,7 +8,7 @@ export default function Main() {
     return (
         <main>
             <div className="container">
-                <PostCard />
+                {posts.map (post => <PostCard key={post.id} post={post}/>)}
             </div>
         </main>
     )

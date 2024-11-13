@@ -1,6 +1,5 @@
 // importazioni
 import style from '../Button/Button.module.css';
-import posts from '../../data/posts';
 
 export default function PostCard() {
     
