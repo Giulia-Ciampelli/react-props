@@ -1,0 +1,88 @@
+/* stile globale */
+
+/* #region common */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-colour: #E5E5E5;
+  --footer-colour: #333333;
+  --btn-colour: #DAA521;
+  --font-colour: #101010;
+  --card-top-colour: #CCCCCC;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--body-colour);
+  color: var(--font-colour);
+}
+
+/* #endregion common */
+
+/* #region header */
+header {
+  margin: 2rem;
+
+  h1 {
+    text-align: center;
+    font-weight: 600;
+  }
+}
+
+/* #endregion header */
+
+/* #region main */
+main {
+  padding-bottom: 10%;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .card {
+      width: 50%;
+      border-radius: 1.5rem;
+      box-shadow: #363636 2px 4px 8px;
+      background-color: white;
+      overflow: hidden;
+
+      .card-top {
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .card-bottom {
+        padding: 1rem;
+
+        h4 {
+          margin-bottom: 1rem;
+        }
+
+        p {
+          margin-bottom: 1rem;
+          line-height: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+/* #endregion main */
+
+/* #region footer */
+footer {
+  background-color: var(--footer-colour);
+  color: white;
+  padding: 1.5rem 6rem;
+  font-size: small;
+  text-align: center;
+}
+
+/* #endregion footer */
