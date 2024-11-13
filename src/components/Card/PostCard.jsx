@@ -6,6 +6,8 @@ export default function PostCard({ post }) {
     // logica
     const button = 'leggi di più';
 
+    // map di map?
+
     // markup
     return (
         <>

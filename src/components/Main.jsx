@@ -7,8 +7,6 @@ export default function Main() {
     // logica
     const updated_posts = posts.filter(post => post.published === true);
     
-    // map di map?
-
     // markup
     return (
         <main>
