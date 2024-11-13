@@ -8,7 +8,9 @@ export default function Main() {
     return (
         <main>
             <div className="container">
-                {posts.map (post => <PostCard key={post.id} post={post}/>)}
+                <div className="row">
+                    {posts.map(post => <PostCard key={post.id} post={post} />)}
+                </div>
             </div>
         </main>
     )
