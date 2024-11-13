@@ -1,7 +1,7 @@
 // importazioni
 import style from '../Button/Button.module.css';
 
-export default function PostCard() {
+export default function PostCard({post}) {
     
     // logica
     const button = 'leggi di più';
@@ -10,14 +10,14 @@ export default function PostCard() {
     return (
         <div className="card">
             <div className="card-top">
-                <img src="https://picsum.photos/600/400" alt="immagine casuale" />
+                <img src="https://picsum.photos/600/400" alt={post.title} />
             </div>
             <div className="card-bottom">
                 <h4>
-                    Titolo del post
+                    {post.title}
                 </h4>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis cumque quibusdam a tempora eius labore earum minus. Dolorem quasi ipsa, suscipit qui laboriosam repellendus repellat sit delectus quaerat nihil repudiandae?
+                    {post.content}
                 </p>
                 <button className={style.btn}>
                     {button.toUpperCase()}
